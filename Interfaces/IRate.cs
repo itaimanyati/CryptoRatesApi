@@ -9,10 +9,10 @@ namespace Interfaces
 {
     public interface IRate
     {
-        IEnumerable<User> GetRates();
+        IEnumerable<Rate> GetRates();
         Rate GetRate (int id);
-        void AddRate(User user);
-        void UpdateRate(User user);
+        void AddRate(Rate rate);
+        void UpdateRate(Rate rate);
         void DeleteRate(int id);
 
     }

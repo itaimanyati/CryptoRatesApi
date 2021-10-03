@@ -1,0 +1,15 @@
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\obj\Debug\net5.0\Interfaces.csproj.AssemblyReference.cache
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\obj\Debug\net5.0\Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\obj\Debug\net5.0\Interfaces.AssemblyInfoInputs.cache
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\obj\Debug\net5.0\Interfaces.AssemblyInfo.cs
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\obj\Debug\net5.0\Interfaces.csproj.CoreCompileInputs.cache
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\bin\Debug\net5.0\Interfaces.deps.json
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\bin\Debug\net5.0\Interfaces.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\bin\Debug\net5.0\ref\Interfaces.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\bin\Debug\net5.0\Interfaces.pdb
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\bin\Debug\net5.0\Entities.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\bin\Debug\net5.0\Entities.pdb
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\obj\Debug\net5.0\Interfaces.csproj.CopyComplete
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\obj\Debug\net5.0\Interfaces.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\obj\Debug\net5.0\ref\Interfaces.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Interfaces\obj\Debug\net5.0\Interfaces.pdb

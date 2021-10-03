@@ -9,10 +9,10 @@ namespace Interfaces
 {
     public interface IUser
     {
-        IEnumerable<User> GetRates();
-        User GetRate(int id);
-        void AddRate(User rate);
-        void UpdateRate(User rate);
-        void DeleteRate(int id);
+        IEnumerable<User> GetUsers();
+        User GetUser(int id);
+        void AddUser(User rate);
+        void UpdateUser(User rate);
+        void DeleteUser(int id);
     }
 }

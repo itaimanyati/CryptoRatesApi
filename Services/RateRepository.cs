@@ -43,6 +43,7 @@ namespace Services
             _cryptoContext.Rates.Remove(rate);
             _cryptoContext.SaveChanges(true);
         }
-  
+
+      
     }
 }

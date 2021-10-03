@@ -1,12 +1,16 @@
+using Entities;
+using Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +32,9 @@ namespace CryptoRatesApi
         {
 
             services.AddControllers();
+            services.AddDbContext<CryptoContext>(o => o.UseSqlServer(Configuration.GetConnectionString("localDbConn")));
+            services.AddScoped<IRate, RateRepository>();
+            services.AddScoped<IUser, UserRepository>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CryptoRatesApi", Version = "v1" });
@@ -35,7 +42,7 @@ namespace CryptoRatesApi
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, CryptoContext cryptContext)
         {
             if (env.IsDevelopment())
             {
@@ -49,6 +56,8 @@ namespace CryptoRatesApi
             app.UseRouting();
 
             app.UseAuthorization();
+
+            cryptContext.Database.EnsureCreated();
 
             app.UseEndpoints(endpoints =>
             {
