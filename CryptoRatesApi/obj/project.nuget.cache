@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "1GePavo9IMTVlPCVaMNPk0wBu0sA2Bb9OX4XUkQbXAQl+kFgjFQB+F4cDc8XybASv4zK2GEo0zCPWSMKA4Q5gA==",
+  "success": true,
+  "projectFilePath": "C:\\CODING\\ASSESSMENTS\\Revix\\CryptoRatesApi\\CryptoRatesApi\\CryptoRatesApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ItaiManyati\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ItaiManyati\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ItaiManyati\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\ItaiManyati\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\ItaiManyati\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\ItaiManyati\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
