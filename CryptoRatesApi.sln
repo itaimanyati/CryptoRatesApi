@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoRatesApi", "CryptoRatesApi\CryptoRatesApi.csproj", "{1FDF1302-D0C7-4D04-BA27-1AC55A586B05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoRates", "CryptoRatesApi\CryptoRates.csproj", "{1FDF1302-D0C7-4D04-BA27-1AC55A586B05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{75B513E6-8594-4193-BFAD-CC9A4D3FBF67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{75B513E6-8594-4193-BFAD-CC9A4D3FBF67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{3680C0CC-F9E9-4BAD-8942-9B2BC026BB85}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{2BC7B070-B5E1-48CA-80DD-B1BF52A34A5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{9ED0FAF2-9358-431E-B743-E30BF5413531}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +23,10 @@ Global
 		{75B513E6-8594-4193-BFAD-CC9A4D3FBF67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75B513E6-8594-4193-BFAD-CC9A4D3FBF67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75B513E6-8594-4193-BFAD-CC9A4D3FBF67}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3680C0CC-F9E9-4BAD-8942-9B2BC026BB85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3680C0CC-F9E9-4BAD-8942-9B2BC026BB85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3680C0CC-F9E9-4BAD-8942-9B2BC026BB85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3680C0CC-F9E9-4BAD-8942-9B2BC026BB85}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2BC7B070-B5E1-48CA-80DD-B1BF52A34A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BC7B070-B5E1-48CA-80DD-B1BF52A34A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BC7B070-B5E1-48CA-80DD-B1BF52A34A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BC7B070-B5E1-48CA-80DD-B1BF52A34A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED0FAF2-9358-431E-B743-E30BF5413531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED0FAF2-9358-431E-B743-E30BF5413531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED0FAF2-9358-431E-B743-E30BF5413531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED0FAF2-9358-431E-B743-E30BF5413531}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

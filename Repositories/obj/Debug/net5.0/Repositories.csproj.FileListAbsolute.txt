@@ -1,0 +1,15 @@
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\bin\Debug\net5.0\Repositories.deps.json
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\bin\Debug\net5.0\Repositories.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\bin\Debug\net5.0\ref\Repositories.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\bin\Debug\net5.0\Repositories.pdb
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\bin\Debug\net5.0\Entities.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\bin\Debug\net5.0\Entities.pdb
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.csproj.AssemblyReference.cache
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.AssemblyInfoInputs.cache
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.AssemblyInfo.cs
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.csproj.CoreCompileInputs.cache
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\ref\Repositories.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.pdb
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.csproj.CopyComplete

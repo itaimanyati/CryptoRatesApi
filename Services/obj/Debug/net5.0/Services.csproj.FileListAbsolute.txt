@@ -11,7 +11,6 @@ C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Services\bin\Debug\net5.0\Entities.dl
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Services\bin\Debug\net5.0\Interfaces.dll
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Services\bin\Debug\net5.0\Interfaces.pdb
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Services\bin\Debug\net5.0\Entities.pdb
-C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Services\obj\Debug\net5.0\Services.csproj.CopyComplete
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Services\obj\Debug\net5.0\Services.dll
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Services\obj\Debug\net5.0\ref\Services.dll
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Services\obj\Debug\net5.0\Services.pdb

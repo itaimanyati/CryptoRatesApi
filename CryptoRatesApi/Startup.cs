@@ -1,20 +1,14 @@
 using Entities;
-using Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Repositories;
+using Repositories.Interfaces;
 using Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CryptoRatesApi
 {
@@ -32,13 +26,42 @@ namespace CryptoRatesApi
         {
 
             services.AddControllers();
-            services.AddDbContext<CryptoContext>(o => o.UseSqlServer(Configuration.GetConnectionString("localDbConn")));
-            services.AddScoped<IRate, RateRepository>();
-            services.AddScoped<IUser, UserRepository>();
+
+            // Add Db Connection
+            services.AddDbContext<CryptoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("localDbConn")));
+
+            // Reposiitories injection
+
+            //services.AddScoped<IRateRepository, RateRepository>();
+            //services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CryptoRatesApi", Version = "v1" });
             });
+
+            /* JWT authentication
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+              .AddJwtBearer(options =>
+              {
+                  options.TokenValidationParameters = new TokenValidationParameters
+                  {
+                      ValidateIssuer = true,
+                      ValidateAudience = true,
+                      ValidateLifetime = true,
+                      ValidateIssuerSigningKey = true,
+                      ValidIssuer = Configuration["Tokens:Issuer"],
+                      ValidAudience = Configuration["Tokens:Issuer"],
+                      IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokens:Key"])),
+                      ClockSkew = TimeSpan.Zero,
+                  };
+              });  */
+
+            
+
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +78,7 @@ namespace CryptoRatesApi
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             cryptContext.Database.EnsureCreated();
 

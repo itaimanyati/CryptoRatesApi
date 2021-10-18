@@ -8,8 +8,8 @@ namespace Services
 {
     public class RateRepository : IRate
     {
-        private CryptoContext _cryptoContext;
-        public RateRepository(CryptoContext cryptoContext)
+        private RepositoryContext _cryptoContext;
+        public RateRepository(RepositoryContext cryptoContext)
         {
             _cryptoContext = cryptoContext;
         }
