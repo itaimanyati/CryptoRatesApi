@@ -14,7 +14,8 @@ namespace Entities
         {
                 
         }
+       // public DbSet<RateResponse> RateResponse { get; set; }
         public DbSet<Rate> Rates { get; set; }
-        public DbSet<User> Users { get; set; }
+
     }
 }

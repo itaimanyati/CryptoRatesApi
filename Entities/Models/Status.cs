@@ -1,19 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace Entities.Models
 {
+    [Serializable]
+    [DataContract]
     public class Status
     {
+        [DataMember(EmitDefaultValue = false)]
         public DateTime timestamp { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public int error_code { get; set; }
-        public object error_message { get; set; }
+        [DataMember(EmitDefaultValue = false)]
+
+        public string error_message { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public int elapsed { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public int credit_count { get; set; }
-        public object notice { get; set; }
+        [DataMember(EmitDefaultValue = false)]
+        public string notice { get; set; }
+        [DataMember(EmitDefaultValue = false)]
         public int total_count { get; set; }
     }
 }

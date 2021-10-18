@@ -1,14 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Entities.Models
 {
     [Serializable]
     [DataContract]
-    public class Data
+    public class RateResponse
     {
         [DataMember(EmitDefaultValue = false)]
-        public List<Coin> Coins { get; set; }
+        public Status status { get; set; }
+
+        [DataMember(EmitDefaultValue = false)]
+        public Data data { get; set; }
+
     }
 }

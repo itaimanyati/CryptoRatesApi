@@ -1,48 +1,43 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Entities.Models
 {
     [Serializable]
     [DataContract]
-    public class Usd
+    public class Coin
     {
         [DataMember(EmitDefaultValue = false)]
-        public double price { get; set; }
+        public int id { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
-        public double volume_24h { get; set; }
+        public string name { get; set; }
+        [DataMember(EmitDefaultValue = false)]
+        public string symbol { get; set; }
 
         [DataMember(EmitDefaultValue = false)]
-        public double percent_change_1h { get; set; }
-
+        public string slug { get; set; }
         [DataMember(EmitDefaultValue = false)]
-        public double percent_change_24h { get; set; }
-
+        public int num_market_pairs { get; set; }
         [DataMember(EmitDefaultValue = false)]
-        public double percent_change_7d { get; set; }
-
+        public DateTime date_added { get; set; }
         [DataMember(EmitDefaultValue = false)]
-        public double percent_change_30d { get; set; }
-
+        public List<string> tags { get; set; }
         [DataMember(EmitDefaultValue = false)]
-        public double percent_change_60d { get; set; }
-
+        public long max_supply { get; set; }
         [DataMember(EmitDefaultValue = false)]
-        public double percent_change_90d { get; set; }
-
+        public double circulating_supply { get; set; }
         [DataMember(EmitDefaultValue = false)]
-        public double market_cap { get; set; }
-
+        public double total_supply { get; set; }
         [DataMember(EmitDefaultValue = false)]
-        public double market_cap_dominance { get; set; }
-
+        public Platform platform { get; set; }
         [DataMember(EmitDefaultValue = false)]
-        public double fully_diluted_market_cap { get; set; }
-
+        public int cmc_rank { get; set; }
         [DataMember(EmitDefaultValue = false)]
         public DateTime last_updated { get; set; }
 
+        [DataMember(EmitDefaultValue = false)]
+        public Quote quote { get; set; }
     }
 }
-

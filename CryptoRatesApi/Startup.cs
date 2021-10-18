@@ -1,3 +1,4 @@
+using CryptoRates.Services.Interfaces;
 using Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,6 +28,8 @@ namespace CryptoRatesApi
 
             services.AddControllers();
 
+            
+
             // Add Db Connection
             services.AddDbContext<CryptoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("localDbConn")));
 
@@ -35,6 +38,8 @@ namespace CryptoRatesApi
             //services.AddScoped<IRateRepository, RateRepository>();
             //services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<ICMC_Service, CMC_Service>();
+            services.AddTransient<ICoinMarketCapAdapter, CoinMarketCapAdapter>();
 
             services.AddSwaggerGen(c =>
             {

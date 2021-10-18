@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Sj6MPlM/AUvVRcIh1fp6USeP/rQuCZqb2crZCrT6eoIoPShaRedHrEswQkImC3AsM/D4JkuF8KSuGhFX+OUQTw==",
+  "dgSpecHash": "9xgyd5rTZ4uVLVGrGBAPYFPjwH+mM9MIBcRcqWnDGNXHvN/Gy8CowGio1BF3/AnLHYi/M4Fc7LeIJWr3yuBvuQ==",
   "success": true,
   "projectFilePath": "C:\\CODING\\ASSESSMENTS\\Revix\\CryptoRatesApi\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
+    "C:\\Users\\ItaiManyati\\.nuget\\packages\\restsharp\\106.12.0\\restsharp.106.12.0.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

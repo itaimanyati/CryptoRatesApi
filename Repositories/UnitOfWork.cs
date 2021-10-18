@@ -1,11 +1,7 @@
 ﻿using Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Repositories.Interfaces;
 
-namespace Repositories.Interfaces
+namespace Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -13,13 +9,11 @@ namespace Repositories.Interfaces
         public UnitOfWork(CryptoContext cryptoContext)
         {
             _context = cryptoContext;
-            Rates = new RateRepository(_context);
-            Users = new UserRepository(_context);
+            //Rates = new RateRepository();
+           
         }
         public IRateRepository Rates { get; private set; }
-        public IUserRepository Users { get; private set; }
-
-
+        
         public void Save()
         {
             _context.SaveChanges();

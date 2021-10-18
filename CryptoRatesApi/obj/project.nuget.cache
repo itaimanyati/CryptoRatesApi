@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m4QQmTJZ0WhIRRbTZuIeD74jzhDik8cNBivzY4KxwjIWy1NH+naEPUQo8xbLIHw5jUkfWNPY4shwy7vinGoccw==",
+  "dgSpecHash": "KkQdxwlwfJCALvBZ9N8HGd+wyi0816uQxtbfQqbQYmUYHZrqOEkqXxkMl061spgM9m0iV3z9KSUc26XDprsikA==",
   "success": true,
-  "projectFilePath": "C:\\CODING\\ASSESSMENTS\\Revix\\CryptoRatesApi\\CryptoRatesApi\\CryptoRates.csproj",
+  "projectFilePath": "C:\\CODING\\ASSESSMENTS\\Revix\\CryptoRatesApi\\CryptoRatesApi\\CryptoRatesApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\aspnetcore.authentication.plugin\\1.0.1\\aspnetcore.authentication.plugin.1.0.1.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -40,6 +40,7 @@
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\ItaiManyati\\.nuget\\packages\\restsharp\\106.12.0\\restsharp.106.12.0.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\ItaiManyati\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",

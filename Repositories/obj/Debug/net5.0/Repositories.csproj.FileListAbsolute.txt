@@ -12,4 +12,3 @@ C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Reposit
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.dll
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\ref\Repositories.dll
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.pdb
-C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\Repositories\obj\Debug\net5.0\Repositories.csproj.CopyComplete

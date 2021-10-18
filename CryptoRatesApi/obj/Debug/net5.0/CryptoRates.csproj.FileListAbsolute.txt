@@ -66,3 +66,5 @@ C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\CryptoRatesApi\obj\Debug\net5.0\ref\C
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\CryptoRatesApi\obj\Debug\net5.0\CryptoRates.pdb
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\CryptoRatesApi\obj\Debug\net5.0\CryptoRates.genruntimeconfig.cache
 C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\CryptoRatesApi\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\CryptoRatesApi\bin\Debug\net5.0\RestSharp.dll
+C:\CODING\ASSESSMENTS\Revix\CryptoRatesApi\CryptoRatesApi\obj\Debug\net5.0\CryptoRates.csproj.CopyComplete

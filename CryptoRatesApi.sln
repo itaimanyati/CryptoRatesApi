@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoRates", "CryptoRatesApi\CryptoRates.csproj", "{1FDF1302-D0C7-4D04-BA27-1AC55A586B05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptoRatesApi", "CryptoRatesApi\CryptoRatesApi.csproj", "{1FDF1302-D0C7-4D04-BA27-1AC55A586B05}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{75B513E6-8594-4193-BFAD-CC9A4D3FBF67}"
 EndProject

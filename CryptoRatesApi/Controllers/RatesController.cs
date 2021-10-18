@@ -6,6 +6,7 @@ using Repositories.Interfaces;
 using Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CryptoRates.Services.Interfaces;
 
 namespace CryptoRatesApi.Controllers
 {
@@ -18,11 +19,13 @@ namespace CryptoRatesApi.Controllers
     {
         
         private IUnitOfWork _unitOfWork;
+        private readonly ICMC_Service _service;
       
-        public RatesController(IUnitOfWork unitOfWork)
+        public RatesController(IUnitOfWork unitOfWork, ICMC_Service service)
         {
            
             _unitOfWork = unitOfWork;
+            _service = service;
           
         }
 
@@ -50,10 +53,10 @@ namespace CryptoRatesApi.Controllers
         {
             try
             {
-                var data = CMC_Service.GetCMCRates().Result;
-
+                var rateResponse = _service.GetCMCRates();
                 
-                foreach (var item in data)
+                /*
+                foreach (var item in rateResponse.data)
                 {
                     var rate = new Rate()
                     {
@@ -71,6 +74,8 @@ namespace CryptoRatesApi.Controllers
 
                     _unitOfWork.Rates.Create(rate);
                 }
+
+                */
 
                 
 
@@ -115,7 +120,7 @@ namespace CryptoRatesApi.Controllers
 
         public async Task<ActionResult> Get_CMC_Rates()
         {
-            var ratesObj = await CMC_Service.GetCMCRates();
+            var ratesObj = await _service.GetCMCRates();
             if (ratesObj == null)
             {
                 return NotFound();

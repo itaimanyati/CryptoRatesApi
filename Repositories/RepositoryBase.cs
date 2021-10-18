@@ -10,7 +10,7 @@ namespace Repositories
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
         protected readonly DbContext _context;
-
+       
         public RepositoryBase(CryptoContext repositoryContext)
         {
             _context = repositoryContext;
