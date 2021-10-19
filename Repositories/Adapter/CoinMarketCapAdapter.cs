@@ -50,7 +50,7 @@ namespace Repositories
                     //var statusStr = primaryResult["data"];
                     foreach (var coin in primaryResult["data"])
                     {
-                        //Console.WriteLine(coin);
+                        // Create Rate object 
 
                         var coinObj = new Rate() {
                             id = coin.id,

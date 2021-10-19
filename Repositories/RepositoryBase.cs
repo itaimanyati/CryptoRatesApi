@@ -1,9 +1,11 @@
 ﻿using Entities;
 using Microsoft.EntityFrameworkCore;
+using Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Repositories
 {
@@ -14,6 +16,7 @@ namespace Repositories
         public RepositoryBase(CryptoContext repositoryContext)
         {
             _context = repositoryContext;
+           
         }
 
 
@@ -59,6 +62,8 @@ namespace Repositories
             _context.Set<T>().Remove(entity);
          
         }
+
+               
 
     }
 }

@@ -9,7 +9,6 @@ namespace Repositories
 {
     public interface  IRateRepository: IRepositoryBase<Rate>
     {
-        Task<IEnumerable<Rate>> GetRates();
-        Task StoreRates();
+      
     }
 }

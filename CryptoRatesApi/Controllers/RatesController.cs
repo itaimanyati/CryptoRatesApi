@@ -51,8 +51,12 @@ namespace CryptoRatesApi.Controllers
         [HttpPost]
         public IActionResult Post()
         {
-
-            var rate = _unitOfWork.Rates.StoreRates();
+            var rates = _service.GetCMCRates().Result;
+            foreach (var item in rates)
+            {
+                _unitOfWork.Rates.Create(item);
+            }
+           
           
              return Ok();
 

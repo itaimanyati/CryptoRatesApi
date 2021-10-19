@@ -8,32 +8,16 @@ namespace Repositories
 {
     public class RateRepository : RepositoryBase<Rate>,IRateRepository
     {
-        private ICoinMarketCapAdapter _adapter;
-        protected CryptoContext _context;
-        public RateRepository(CryptoContext cryptoContext, ICoinMarketCapAdapter adapter) 
+        protected readonly ICoinMarketCapAdapter _adapter;
+        //protected readonly CryptoContext _context;
+        public RateRepository(CryptoContext cryptoContext) 
             :base(cryptoContext)
         {
-            _adapter = adapter;
-            _context = cryptoContext;
+           
         }
 
-        public RateRepository(CryptoContext repositoryContext) : base(repositoryContext)
-        {
-        }
+     
 
-        public async Task<IEnumerable<Rate>> GetRates()
-        {
-            var rates =  await _adapter.GetRates();
-            return rates;
-        }
-
-        public async Task StoreRates()
-        {
-            var rates = await _adapter.GetRates();
-            foreach (var item in rates)
-            {
-                _context.Add(item);
-            }
-        }
+       
     }
 }

@@ -12,12 +12,12 @@ namespace Repositories
         {
             _context = cryptoContext;
             _adapter = adapter;
-            Adapter = new CoinMarketCapAdapter();
-            Rates = new RateRepository(_context, _adapter);
+            
+            Rates = new RateRepository(_context);
                     
         }
 
-        public ICoinMarketCapAdapter Adapter { get; set; }
+       
         public IRateRepository Rates { get; set; }
 
 
