@@ -42,7 +42,7 @@ namespace CryptoRatesApi.Controllers
         {
             var rate = _unitOfWork.Rates.Get(id);
             if (rate == null)
-                return NotFound("Rate with given id in not found");
+                return NotFound("Rate with given id is not found");
 
             return Ok(rate);
         }
@@ -51,44 +51,12 @@ namespace CryptoRatesApi.Controllers
         [HttpPost]
         public IActionResult Post()
         {
-            try
-            {
-                var rateResponse = _service.GetCMCRates();
-                
-                /*
-                foreach (var item in rateResponse.data)
-                {
-                    var rate = new Rate()
-                    {
-                        id = item.id,
-                        name = item.name,
-                        symbol = item.symbol,
-                        slug = item.slug,
-                        price = item.quote.USD.price,
-                        percentage_change_24h = item.quote.USD.percent_change_24h,
-                        percentage_change_7d = item.quote.USD.percent_change_7d,
-                        market_cap = item.quote.USD.market_cap,
-                        circulating_supply = item.circulating_supply
 
-                    };
+            var rate = _unitOfWork.Rates.StoreRates();
+          
+             return Ok();
 
-                    _unitOfWork.Rates.Create(rate);
-                }
-
-                */
-
-                
-
-
-                return Ok();
-
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            
+             
         }
 
         [HttpPut]

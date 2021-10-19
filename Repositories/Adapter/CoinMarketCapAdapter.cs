@@ -13,6 +13,11 @@ namespace Repositories
     {
         private readonly IConfiguration _config;
         private List<Rate> ratesList;
+
+        public CoinMarketCapAdapter()
+        {
+        }
+
         public CoinMarketCapAdapter(IConfiguration config)
         {
             _config = config;
@@ -63,11 +68,7 @@ namespace Repositories
                         ratesList.Add(coinObj);
 
                     }
-                        //var dataArray= statusStr.SubString(1, (statusStr.Length - 2));
-
-                    //var status = JsonConvert.DeserializeObject<List<Coin>>(dataArray);
-
-                    //Console.WriteLine(statusStr);
+                        
 
                 }
 

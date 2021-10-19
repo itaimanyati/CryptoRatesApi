@@ -33,10 +33,6 @@ namespace CryptoRatesApi
             // Add Db Connection
             services.AddDbContext<CryptoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("localDbConn")));
 
-            // Reposiitories injection
-
-            //services.AddScoped<IRateRepository, RateRepository>();
-            //services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddTransient<ICMC_Service, CMC_Service>();
             services.AddTransient<ICoinMarketCapAdapter, CoinMarketCapAdapter>();
@@ -46,27 +42,7 @@ namespace CryptoRatesApi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CryptoRatesApi", Version = "v1" });
             });
 
-            /* JWT authentication
-
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-              .AddJwtBearer(options =>
-              {
-                  options.TokenValidationParameters = new TokenValidationParameters
-                  {
-                      ValidateIssuer = true,
-                      ValidateAudience = true,
-                      ValidateLifetime = true,
-                      ValidateIssuerSigningKey = true,
-                      ValidIssuer = Configuration["Tokens:Issuer"],
-                      ValidAudience = Configuration["Tokens:Issuer"],
-                      IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokens:Key"])),
-                      ClockSkew = TimeSpan.Zero,
-                  };
-              });  */
-
             
-
-           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
